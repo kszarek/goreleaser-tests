@@ -31,9 +31,9 @@ release:
   github:
     owner: kszarek
     name: goreleaser-tests
-  draft: true
-  replace_existing_draft: true
-  use_existing_draft: true
+  draft: false
+  replace_existing_draft: false
+  make_latest: true
   mode: append
   name_template: "v{{ .Version }}"
   target_commitish: "{{ .Commit }}"
